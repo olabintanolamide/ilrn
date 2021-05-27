@@ -1,0 +1,352 @@
+@font-face{
+    src: url(fonts/Poppins/Poppins-Light.ttf);
+    src: url(fonts/poppins/Poppins-Medium.ttf);
+    src: url(fonts/Poppins/Poppins-Regular.ttf);
+    font-family: poppins;
+    font-family: poppins mid;
+    font-family: poppins reg;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    font-size: 18px;
+    padding-bottom: 10px;
+    background-color: #f5f8f5;
+  }
+  
+.main-nav {
+list-style-type: none;
+display: none;
+}
+.nav-links,
+  
+.logo {
+    text-decoration: none;
+    color: black;
+    font-family: poppins;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+  
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar img{
+    width: 100px; 
+}
+  
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+}
+  
+.active {
+    display: block;
+}
+  
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+
+
+    .nav-links {
+        margin-left: 40px;
+        font-size: 13px;
+        display: inline-block;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: #22AED1;
+    }
+}
+
+
+.nav-links::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #22AED1;
+    transition: width .3s;
+}
+
+.nav-links:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+  
+
+@media screen and (max-width: 767px) {
+    .navbar img {
+      transform: translate(0, -15%);
+      width: 85px;
+      transition: 1s;
+    }
+}
+   
+
+
+    /* end of navbar */
+
+
+.banner p{
+    font-weight: 100;
+    color: #fff;
+    font-family: poppins;
+    font-size: 12px;
+    text-align: center;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(images/woman-having-online-class-meeting-through-e-learning-system.jpg);
+    background-size: cover;
+}
+
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h2{
+     font-family: poppins;
+     font-size: 60px;
+     line-height: 70px;
+     color: #fff;
+}
+
+.btn{
+    font-size: 10px;
+    color: #fff;
+    background: #22AED1;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    font-family: poppins reg;
+}
+
+.btn:hover{
+    letter-spacing: 6px;
+}
+
+/* about */
+
+.About{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background: #f5f8f5;
+}
+
+.first{
+     display: block;
+    justify-content: center; 
+    text-align: center;
+    flex-wrap: wrap;
+    height: 230px;
+    /* background: #f5f8f5; */
+}
+
+.first h3{
+    font-family: poppins mid;
+    font-size: 30px;
+    margin-bottom: 30px;
+    padding-top: 18px;
+}
+
+#border{
+    border-bottom: 1px solid black;
+    width: 80px;
+    /* margin-left: ; */
+}
+
+.About p{
+    padding-top: 25px;
+    font-family: poppins reg;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+.second{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #f5f8f5;
+    padding: 10px;
+}
+
+.second div{
+    width: 200px;
+    background: #22AED1;
+    height: 200px;
+    margin: 20px;
+
+}
+
+
+
+/* Mission */
+
+
+
+
+
+
+
+
+
+
+
+.mission{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    height: 350px;
+    height: auto;
+}
+
+.ourmission{
+    width: 300px;
+    padding: 10px;
+    height: auto;
+}
+
+.ourmission h1{
+    font-size: 40px;
+    color: #090808;
+    font-family: poppins;
+    font-weight: 300;
+}
+
+.ourmission #line{
+    width: 80px;
+    border-bottom: 1px solid black;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.text{
+    width: 500px;
+    padding: 10px;
+}
+
+.text #lorem{
+    padding-top: 40px;
+}
+
+.text p{
+    font-family: poppins reg;
+    font-size: 15px;
+}
+
+ @media screen and (max-width: 819px){
+    .ourmission #line{
+      margin-left: 80px;
+      transition: 1s;
+    }
+}
+
+
+
+
+/* Our team */
+
+ #team{
+    background: #f5f8f5;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    height: auto;
+}
+
+.meet{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.meet h2{
+    font-size: 40px;
+    font-family: poppins;
+    font-weight: 300;
+}
+
+#bottom{
+    width: 100px;
+    border: 1px solid black;
+    text-align: center;
+    transform: translate(630px, 10px);
+    
+}
+
+.ourteam{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+    margin: 20px;
+}
+
+.ourteam div{
+    background: black;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 15px;
+} 
