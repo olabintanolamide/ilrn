@@ -574,3 +574,83 @@ display: none;
     height: auto;
     width: 100%;
 }
+
+.appfeatures{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.appfeatures h2{
+    font-size: 35px;
+    font-family: poppins mid;
+    color: #22AED1;
+}
+
+.appfeatures p{
+    font-family: poppins;
+    font-size: 14px;
+}
+
+.appdemo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.demo{
+    width: 200px;
+    height: px;
+    padding: 30px;
+}
+
+.demo img{
+    width: 100%;
+    height: auto;
+}
+
+.textfeature{
+    padding: 20px;
+    width: 250px;
+    margin-top: 65px;
+}
+
+.textfeature li{
+    line-height: 15px;
+    font-size: 15px;
+    font-family: poppins;
+    padding-top: 15px;
+}
+
+.demo div{
+    margin: 120px;
+}
+
+#contactus{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+#contact{
+    background: #f5f8f5;
+}
+ 
+#contact{
+    padding: 30px;
+}
+
+#co{
+    font-family: poppins;
+    font-size: 12px;
+}
+
+#contact h1{
+    color: #22AED1;
+    font-size: 30px;
+}
+
