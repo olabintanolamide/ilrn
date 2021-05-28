@@ -1,113 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <title>Document</title>
+    <link rel="icon" type="image/png" href="images/new.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-</head>
-<body>
     
+  
+</head>
+
+<body>
+
     <nav class="navbar">
         <span class="navbar-toggle" id="js-navbar-toggle">
-            <i class="fa fa-bars" style="color: black;transform: translate(-14px, 28px);"></i>
-            </span>
+            <i class="fa fa-bars" style="color: black;transform: translate(-14px, 50px); font-size: 35px;"></i>
+        </span>
         <a href="#" class="logo"><img src="images/new.png"></a>
         <ul class="main-nav" id="js-menu">
-          <li>
-            <a href="#" class="nav-links">Home</a>
-          </li>
-          <li>
-            <a href="#" class="nav-links">About</a>
-          </li>
-          <li>
-            <a href="#" class="nav-links">Contact</a>
-          </li>
-          <li>
-            <a href="#" class="nav-links">Mission</a>
-          </li>
-          <li>
-            <a href="#" class="nav-links">Team</a>
-          </li>
+            <li>
+                <a href="#banner" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="#about" class="nav-links">About</a>
+            </li>
+            <li>
+                <a href="#contact" class="nav-links">Contact</a>
+            </li>
+            <li>
+                <a href="#mission" class="nav-links">Mission</a>
+            </li>
+            <li>
+                <a href="#team" class="nav-links">Team</a>
+            </li>
         </ul>
-      </nav>
+    </nav>
 
 
 
 
-      <section class="banner" id="banner">
-          <div class="content">
-              <h2>Online Tutoring<br> School</h2>
-              <p>Lorem ipsum dolor sit amet consectetur 
-                  adipisicing<br> elit. Tempora libero quas eum
-                   distinctio nobis totam, aperiam, cum unde 
-                   reiciendis<br> maiores quibusdam illum? Aspernatur 
-                   saepe laudantium</p>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h1 class="element animate__animated animate__bounceInLeft">Online Tutoring<br> School</h1>
+            <p>Compensate your university years by<br> leraning technology skills
+            </p>
 
-               <a href="#" class="btn">Learn more</a>    
-          </div>
-          
-      </section>
-      <!-- <img src="images/waves.png" style="display: flex; flex-wrap: wrap; transform: translate(0, -150px);width: 100%;"> -->
-
-
-<section class="About">
-  <div class="first">
-      <h3>About us</h3>
-        <h6 id="border"></h6>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit<br> Numquam at doloribus debitis quisquam, nesciunt quaerat commodi ratione iure est totam reprehenderit<br> asperiores doloremque molestias</p>
-   </div>
-<div class="second">
-    <div>
-        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa totam eligendi minus fugiat tenetur quaerat vitae non facilis recusandae laborum ipsam voluptas libero velit repellat, quis, sit distinctio alias ut!</p> -->
-        
-    </div>
-    <div>2</div>
-    <div>3</div>
-</div>
-
-</section>
-
-
-<section id="mission">
-    <div class="mission">
-        <div class="ourmission">
-            <h1>Our Mission</h1>
-            <p id="line"></p>
+            <a href="#" class="btn">Download Now</a>
         </div>
-        <div class="text">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit voluptatibus ipsum repellat expedita. Doloribus deleniti assumenda veniam illum laboriosam? Doloribus perspiciatis neque hic voluptatibus aliquid aperiam animi, laudantium illo officiis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab voluptatibus, quas, fugiat soluta consequatur aperiam molestiae accusamus, quae deleniti sunt repellat</p>
 
-            <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, sequi minima eveniet quibusdam earum esse quia, explicabo recusandae consectetur velit sunt quasi provident voluptates dolore autem! Quasi temporibus alias et! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti voluptates praesentium dignissimos expedita saepe debitis distinctio quis pariatur repudiandae accusantium? Suscipit.</p>
+        <div class="image">
+            <img src="images/Group 3.png">
         </div>
-    </div>
-</section>
 
-<section id="team">
-    <div>
-        <div class="meet">
-            <h2>Meet Our Team</h2>
-            <!-- <p id="bottom"></p> -->
+    </section>
+
+
+
+    <section class="About" id="about">
+        <div class="first">
+            <h3>About us</h3>
+            <h6 id="border"></h6>
+            <p>We help technology enthusiasts leran new skills in a very interactive and effective way<br>We have an
+                application that helps suscribers learn, discourse and also leave comment during their training
+                section.<br> We also help by providing full package on several courses after a one time payment within a
+                period of time.</p>
         </div>
-        <div class="ourteam">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="second">
+            <div class="learn">
+                <img src="images/online-learning.png">
+                <p>Learn</p>
+                <p id="space">Learn the ins and out of your choice of skill</p>
+            </div>
+            <div class="practice">
+                <img src="images/learning (1).png">
+                <p>Practice</p>
+                <p id="space">We provide excercises so you can sharpen your skill</p>
+            </div>
+            <div class="grow">
+                <img src="images/bars.png">
+                <p>Grow</p>
+                <p id="space">Connecting you with top proffessionals and companies</p>
+            </div>
+            
         </div>
-    </div>
-</section>
+
+    </section>
+
+
+    <section id="mission">
+        <div class="mission">
+            <div class="ourmission">
+                <h1>Our Mission</h1>
+                <p id="line"></p>
+            </div>
+            <div class="text">
+                <p>Our mission is to equip young technology enthusiasts with effective skills globally</p>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div>
+            <div class="meet">
+                <h2>Meet Our Team</h2>
+                <p id="border"></p>
+            </div>
+            <div class="ourteam">
+                <div id="img">
+                    <div id="flow" style="background-image: url('./images/IMG_1102.jpg'); background-size: contain;">
+                        <!-- <img src="images/IMG_1102.jpg"> -->
+                    </div>
+                    <div id="paragraph">
+                        <p>Asaolu Ayomide</p>
+                        <p id="bold">Product Designer</p>
+                    </div>
+                </div>
+                <div id="img">
+                    <div id="flow"
+                        style="background-image: url('./images/WhatsApp\ Image\ 2021-05-28\ at\ 05.03.32.jpeg'); background-size: contain;">
+
+                    </div>
+                    <div id="paragraph">
+                        <p>Olabintan Olamide</p>
+                        <p id="bold">Front-end Developer</p>
+                    </div>
+                </div>
+                <div id="img">
+                    <div id="flow" style="background-image: url('./images/IMG_1102.jpg'); background-size: contain;">
+                        <!-- <img src="images/Group 3.png"> -->
+                    </div>
+                    <div id="paragraph">
+                        <p>Oromuno Okiemute</p>
+                        <p id="bold">UI/UX Designer</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="ourteam2">
+                <div id="img2" >
+                    <div id="flow" style="background-image: url('./images/WhatsApp\ Image\ 2021-05-28\ at\ 07.09.13.jpeg'); background-size: contain;">
+                        <!-- <img src="images/Group 3.png"> -->
+                    </div>
+                    <div id="paragraph">
+                        <p>Olawolu Gbenga</p>
+                        <p id="bold">Back-end Developer</p>
+                    </div>
+                </div>
+                <div id="img2">
+                    <div id="flow" style="background-image: url('./images/WhatsApp\ Image\ 2021-05-28\ at\ 06.59.08\ \(1\).jpeg'); background-size: contain;">
+                        <!-- <img src="images/Group 3.png"> -->
+                    </div>
+                    <div id="paragraph">
+                        <p>Adegite Kehinde</p>
+                        <p id="bold">Andriod Developer</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
 
+    <section id="app">
+
+        <div class="aboutapp">
+            <h2>About The App</h2>
+            <p id="border"></p>
+        </div>
+        <div class="appinfo">
+            <div class="look">
+                <h3>Take a look around our App</h3>
+                <p>This is where all the activity of the user takes place. The ilrn app has exquisite user experience
+                    that enables the user navigate through the application seamlessly. As a user, you will decide the
+                    path you want to follow in the tech world, after picking an interest, the user will wait a short
+                    period of time till when the course is available.
+
+                    In essence, what the ilrn app does is to to help Technology enthusiasts to leran new skills in a
+                    very interactive way. It provides notification feature and it also provides an offline download
+                    feature.
+
+                </p>
+
+                <a href="#" class="btn">Download Now</a>
+            </div>
+
+            <div class="video">
+                <img src="images/woman-having-online-class-meeting-through-e-learning-system.jpg">
+            </div>
+        </div>
+    </section>
 
 
 
-      <script src="app.js">
-          
-      </script>
+    <section id="features">
+
+    </section>
+
+
+    <script src="app.js">
+
+    </script>
+
+    <!-- smooth scroll -->
+
+    <script src="smooth-scroll.js">
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 </body>
+
 </html>

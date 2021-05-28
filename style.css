@@ -21,6 +21,10 @@ body{
     font-size: 18px;
     padding-bottom: 10px;
     background-color: #f5f8f5;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    opacity: 0.9;
   }
   
 .main-nav {
@@ -44,7 +48,7 @@ display: none;
     display: inline-block;
     font-size: 22px;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 80px;
 }
 
 .navbar img{
@@ -124,8 +128,8 @@ display: none;
 
 @media screen and (max-width: 767px) {
     .navbar img {
-      transform: translate(0, -15%);
-      width: 85px;
+      margin-left: -65px;
+      width: 95px;
       transition: 1s;
     }
 }
@@ -135,39 +139,60 @@ display: none;
     /* end of navbar */
 
 
-.banner p{
-    font-weight: 100;
-    color: #fff;
-    font-family: poppins;
-    font-size: 12px;
-    text-align: center;
-}
+
 
 .banner{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(images/woman-having-online-class-meeting-through-e-learning-system.jpg);
-    background-size: cover;
+    margin: 15px;
 }
 
-.banner .content{
-    max-width: 900px;
-    text-align: center;
+.element{
+    
+        display: inline-block;
+        /* margin: 0 0.5rem; */
+      
+        animation: bounceInLeft; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 3s; /* don't forget to set a duration! */
+      
 }
 
-.banner .content h2{
-     font-family: poppins;
-     font-size: 60px;
-     line-height: 70px;
-     color: #fff;
+.content{
+    width: 500px;
+    /* border: 1px solid red; */
+    padding: 10px;
+    height: 300px;
+    margin-top: 12% !important;
+    margin: 10px;
+}
+
+.content h1{
+    font-size: 60px;
+    font-family: poppins ;
+    line-height: 60px;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+.content p{
+    color: #433f4f;
+    font-family: poppins ;
+    font-size: 13px;
+}
+
+.image{
+    width: 670px;
+    margin-top: 30px;
+}
+
+.image img{
+    width: 100%;
+    height: auto;
 }
 
 .btn{
-    font-size: 10px;
+    font-size: 13px;
     color: #fff;
     background: #22AED1;
     display: inline-block;
@@ -183,12 +208,27 @@ display: none;
     letter-spacing: 6px;
 }
 
+@media screen and (max-width: 768px){
+    .image{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .content{
+        margin-top: 3% !important;
+        height: auto;
+        /* border: 1px solid teal; */
+    }
+}
+
 /* about */
 
 .About{
     margin-top: 50px;
     margin-bottom: 20px;
     background: #f5f8f5;
+    height: auto;
 }
 
 .first{
@@ -196,7 +236,7 @@ display: none;
     justify-content: center; 
     text-align: center;
     flex-wrap: wrap;
-    height: 230px;
+    height: auto;
     /* background: #f5f8f5; */
 }
 
@@ -210,7 +250,8 @@ display: none;
 #border{
     border-bottom: 1px solid black;
     width: 80px;
-    /* margin-left: ; */
+    display: inline-block;
+    
 }
 
 .About p{
@@ -218,6 +259,7 @@ display: none;
     font-family: poppins reg;
     padding-bottom: 20px;
     font-size: 14px;
+    
 }
 
 .second{
@@ -226,17 +268,61 @@ display: none;
     justify-content: center;
     background: #f5f8f5;
     padding: 10px;
+    margin: 10px;
+    height: 450px;
+}
+
+.second img{
+    width: 100%;
+    height: auto;
 }
 
 .second div{
-    width: 200px;
-    background: #22AED1;
-    height: 200px;
-    margin: 20px;
-
+    margin: 60px;
 }
 
+.learn{
+    width: 100px;
+    height: 120px;
+    margin: 30px;
+}
 
+.practice{
+    width: 100px;
+    height: 120px;
+    margin: 30px;
+}
+
+.grow{
+    width: 100px;
+    height: 120px;
+    margin: 30px;
+}
+
+.second p{
+    text-align: center;
+    font-weight: 600;
+    font-family: poppins;
+    color: #22AED1;
+}
+
+.second #space{
+    margin-top: -28px;
+    font-weight: 300;
+    color: #433f4f;
+}
+
+@media screen and (max-width: 736px){
+    .second{
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 496px){
+    .second{
+        height: 1000px;
+    }
+}
 
 /* Mission */
 
@@ -261,13 +347,14 @@ display: none;
 
 .ourmission{
     width: 300px;
+    
     padding: 10px;
     height: auto;
 }
 
 .ourmission h1{
     font-size: 40px;
-    color: #090808;
+    color: #22AED1;
     font-family: poppins;
     font-weight: 300;
 }
@@ -324,6 +411,8 @@ display: none;
     font-size: 40px;
     font-family: poppins;
     font-weight: 300;
+    margin-top: 30px;
+    color: #22AED1;
 }
 
 #bottom{
@@ -342,11 +431,146 @@ display: none;
     margin: 20px;
 }
 
-.ourteam div{
-    background: black;
-    border-radius: 50px;
-    width: 100px;
-    height: 100px;
+.ourteam #img{
+    /* width: 120px;
+    height: 120px; */
+    /* border-radius: 60px; */
     padding: 10px;
-    margin: 15px;
-} 
+    margin: 50px;
+    background: #fff;
+}
+
+#flow{
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+#flow{
+    width: 150px;
+    height: 150px;
+}
+
+.ourteam #img p{
+    position: relative;
+    margin: 10px;
+}
+
+#bold{
+    font-weight: 600;
+}
+
+#paragraph{
+    width: 160px;
+    padding-top: 25px;
+    text-align: center;
+    margin-left: -25px;
+    font-family: poppins;
+    font-size: 12px;
+}
+
+.ourteam img{
+    height: auto;
+    width: 100%;
+}
+
+
+.ourteam2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* padding-top: 40px;
+    margin: 20px; */
+}
+
+
+
+
+.ourteam2 #img2{
+    /* width: 120px;
+    height: 120px; */
+    /* border-radius: 60px; */
+    padding: 10px;
+    margin: 50px;
+    background: #fff;
+}
+
+.ourteam2 #img2 p{
+    position: relative;
+    margin: 10px;
+}
+
+.ourteam2 img{
+    width: 100%;
+    height: auto;
+}
+
+#paragraph{
+    width: 160px;
+    padding-top: 25px;
+    text-align: center;
+    margin-left: -25px;
+    font-family: poppins;
+    font-size: 12px;
+}
+
+
+
+/* about the app */
+
+#app{
+    background: #f5f8f5;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    height: auto;
+}
+
+.aboutapp{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutapp h2{
+    font-size: 40px;
+    font-family: poppins;
+    font-weight: 300;
+    color: #22AED1;
+}
+
+.appinfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    height: auto;
+    margin-top: 60px;
+}
+
+.look{
+    width: 400px;
+    padding: 10px;
+    height: auto;
+}
+
+.look h3{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: poppins;
+    padding-bottom: 25px;
+}
+
+.look p{
+    font-family: poppins;
+    font-size: 15px;
+}
+
+.video{
+    width: 500px;
+    padding: 10px;
+}
+
+.video img{
+    height: auto;
+    width: 100%;
+}
