@@ -7,4 +7,4 @@ navBarToggle.addEventListener("click", function() {
 
 
 
-
+let ruinMav = document.getElementsByClassName("js-menu")
